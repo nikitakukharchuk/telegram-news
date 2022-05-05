@@ -1,3 +1,27 @@
+Metadata-Version: 2.1
+Name: telegram-news
+Version: 0.5.1
+Summary: Python package for automatically fetching and pushing news by Telegram.
+Home-page: https://github.com/ESWZY/telegram-news
+Author: ESWZY
+Author-email: 0903wzy@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Education
+Classifier: Topic :: Office/Business :: News/Diary
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 <h1 align="center">
   <img src="https://raw.githubusercontent.com/ESWZY/telegram-news/master/docs/images/banner.png" alt="Telegram-news">
   <br>Telegram-news<br>
@@ -51,7 +75,7 @@ You also need a SQL database. Any SQL database is OK. Especially, I recommend [P
 
 ## Quick deploy on Heroku
 
-Click 👇 button to deploy an example for free. Python environment and PostgreSQL database have been prepared.
+Click рџ‘‡ button to deploy an example for free. Python environment and PostgreSQL database have been prepared.
 
 <a href="https://heroku.com/deploy?template=https://github.com/ESWZY/telegram-news-getting-started">
   <img src="https://www.herokucdn.com/deploy/button.svg" alt="Deploy">
@@ -76,9 +100,9 @@ from telegram_news.template import InfoExtractor, NewsPostman
 
 # Three required fields:
 # Your bot token obtained from @BotFather
-bot_token = os.getenv("5380654787:AAFaWUPAqY5WSZcF4n6V0OmwXveIwtnAPfs")
+bot_token = os.getenv("TOKEN")
 # Add your bots into a channel as an administrator
-channel = os.getenv("https://t.me/test024chanel")
+channel = os.getenv("CHANNEL")
 # Your database to store old messages.
 DATABASE_URL = os.getenv("DATABASE_URL")
 
@@ -267,3 +291,5 @@ If you build a channel by this, don't forget to share that good news with us!
 ## License
 
 Licensed under the MIT License.
+
+
